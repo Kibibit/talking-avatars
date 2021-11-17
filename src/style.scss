@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html,
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh; }
+
+body {
+  --page-background: transparent;
+  --page-background: lightblue;
+  overflow: hidden;
+  background: var(--page-background);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.green-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #00b140; }
+
+#Eyes\/Happy-😁,
+#Eyes\/Surprised-😳,
+#Eyes\/Closed-😌,
+#Mouth\/Scream-Open,
+#Mouth\/Disbelief {
+  display: none; }
+
+.toggle-audio {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  margin: 0.5em;
+  background: transparent;
+  border: none; }
+  .toggle-audio img {
+    width: 50px;
+    height: 50px;
+    visibility: hidden; }
+
+.shake {
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite; }
+  .shake#Face {
+    animation: shakeFace 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; }
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg); }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg); }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg); }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg); }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg); }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg); }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg); }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg); }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg); }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg); } }
+
+@keyframes shakeFace {
+  0% {
+    transform: translate(77px, 83px) rotate(0deg); }
+  10% {
+    transform: translate(75px, 80px) rotate(-1deg); }
+  20% {
+    transform: translate(73px, 82px) rotate(1deg); }
+  30% {
+    transform: translate(79px, 84px) rotate(0deg); }
+  40% {
+    transform: translate(77px, 81px) rotate(1deg); }
+  50% {
+    transform: translate(75px, 84px) rotate(-1deg); }
+  60% {
+    transform: translate(73px, 83px) rotate(0deg); }
+  70% {
+    transform: translate(79px, 83px) rotate(-1deg); }
+  80% {
+    transform: translate(75px, 81px) rotate(1deg); }
+  90% {
+    transform: translate(77px, 84px) rotate(0deg); }
+  100% {
+    transform: translate(77px, 80px) rotate(-1deg); } }
+
+.avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.rpg-text-box {
+  left: 50%;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, calc(100% + 50px + 50px));
+  max-width: 500px;
+  width: 90vw;
+  line-height: 1.5em;
+  margin: 2em 0;
+  background: white;
+  border: 1px solid white;
+  padding: 1em;
+  font-size: 0.7rem;
+  font-family: "Press Start 2P", cursive;
+  border-radius: 0.2em;
+  box-shadow: 0 1px 0 1px black, inset 0 1px 0 1px black, 0 0 0 1px black, inset 0 0 0 1px black, 3px 5px 0px 1px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  transition: all 250ms; }
+  .rpg-text-box.visible {
+    opacity: 1;
+    transform: translate(-50%, calc(100% + 50px)); }
+
+@-moz-document url-prefix() {
+  body #cloudbox,
+  body #cloudbox2 {
+    filter: none;
+    -moz-filter: none; }
+  body .my-mention .kb-logo.twitter {
+    background: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg) no-repeat center; }
+  body .my-mention .kb-logo.github {
+    background: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg) no-repeat center; }
+  body .my-mention .kb-logo.codepen {
+    background: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codepen.svg) no-repeat center; }
+  body .my-mention .kb-logo.stackoverflow {
+    background: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/stackoverflow.svg) no-repeat center; }
+  body .my-mention .kb-logo.twitch {
+    background: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitch.svg) no-repeat center; } }
+
+#cloudbox,
+#cloudbox2 {
+  --cloud-color: white;
+  overflow: hidden;
+  filter: url("#fancy-goo");
+  -moz-filter: url("#fancy-goo");
+  position: absolute;
+  top: 0;
+  left: -25%;
+  bottom: 0;
+  width: 150%; }
+
+#cloudbox span,
+#cloudbox2 span {
+  position: absolute;
+  display: block;
+  width: 200px;
+  height: 20px;
+  background: var(--cloud-color);
+  border-radius: 10px;
+  transform-origin: "50% 50%"; }
+
+.hidden-svg {
+  position: absolute;
+  height: 0; }
+
+.avatar-mention {
+  font-family: "Comfortaa", cursive;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.6rem; }
+
+.my-mention {
+  font-family: "Comfortaa", cursive;
+  position: absolute;
+  top: 1rem;
+  font-size: 1.5rem;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .my-mention .links {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .my-mention .links a {
+      margin: 0 0.2em; }
+  .my-mention .kb-logo {
+    margin: 0.2em;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-color: white; }
+    .my-mention .kb-logo.twitter {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg) no-repeat center;
+      background-color: #1da1f2; }
+    .my-mention .kb-logo.github {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg) no-repeat center;
+      background-color: #181717; }
+    .my-mention .kb-logo.codepen {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codepen.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/codepen.svg) no-repeat center;
+      background-color: #000000; }
+    .my-mention .kb-logo.stackoverflow {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/stackoverflow.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/stackoverflow.svg) no-repeat center;
+      background-color: #fe7a16; }
+    .my-mention .kb-logo.twitch {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitch.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitch.svg) no-repeat center;
+      background-color: #9146ff; }
+    .my-mention .kb-logo.nintendo-switch {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/nintendoswitch.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/nintendoswitch.svg) no-repeat center; }
+    .my-mention .kb-logo.playstation {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/playstation.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/playstation.svg) no-repeat center; }
+    .my-mention .kb-logo.steam {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/steam.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/steam.svg) no-repeat center; }
+    .my-mention .kb-logo.retroarch {
+      -webkit-mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/retroarch.svg) no-repeat center;
+      mask: url(https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/retroarch.svg) no-repeat center; }
