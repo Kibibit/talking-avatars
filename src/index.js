@@ -371,7 +371,7 @@ function start() {
     quotes.push({
       quote: "Warning: Dates in Calendar are closer than they appear.",
     });
-    quotes.push({ quote: "Give me ambiguity or give me something else." });
+    // quotes.push({ quote: "Give me ambiguity or give me something else." });
     quotes.push({
       quote: "Make it idiot proof and someone will make a better idiot.",
     });
@@ -380,13 +380,13 @@ function start() {
     quotes.push({
       quote: "Always remember you're unique, just like everyone else.",
     });
-    quotes.push({ quote: "Save the whales, collect the whole set" });
+    // quotes.push({ quote: "Save the whales, collect the whole set" });
     // quotes.push("A flashlight is a case for holding dead batteries.");
     quotes.push({ quote: "Lottery: A tax on people who are bad at math." });
     quotes.push({ quote: "There's too much blood in my caffeine system." });
-    quotes.push({
-      quote: "Artificial Intelligence usually beats real stupidity.",
-    });
+    // quotes.push({
+    //   quote: "Artificial Intelligence usually beats real stupidity.",
+    // });
     quotes.push({
       quote: "Hard work has a future payoff.  Laziness pays off now.",
     });
@@ -397,7 +397,7 @@ function start() {
       quote: "I wont rise to the occasion, but I'll slide over to it.",
     });
     quotes.push({ quote: "What is a free gift ? Aren't all gifts free?" });
-    quotes.push({ quote: "Very funny, Scotty. Now beam down my clothes." });
+    // quotes.push({ quote: "Very funny, Scotty. Now beam down my clothes." });
     quotes.push({ quote: "Consciousness: that annoying time between naps." });
     quotes.push({ quote: "Oops. My brain just hit a bad sector." });
     // quotes.push("I used to have a handle on life, then it broke.");
@@ -411,21 +411,21 @@ function start() {
       quote: "Better to understand a little than to misunderstand a lot.",
     });
     quotes.push({ quote: "The gene pool could use a little chlorine." });
-    quotes.push({ quote: "When there's a will, I want to be in it." });
-    quotes.push({
-      quote: "All generalizations are false, including this one.",
-    });
+    // quotes.push({ quote: "When there's a will, I want to be in it." });
+    // quotes.push({
+    //   quote: "All generalizations are false, including this one.",
+    // });
     quotes.push({
       quote: "Change is inevitable, except from a vending machine.",
     });
-    quotes.push({
-      quote: "C program run.  C program crash.  C programmer quit.",
-    });
-    quotes.push({ quote: "Criminal Lawyer is a redundancy." });
+    // quotes.push({
+    //   quote: "C program run.  C program crash.  C programmer quit.",
+    // });
+    // quotes.push({ quote: "Criminal Lawyer is a redundancy." });
     quotes.push({ quote: "90% of all statistics are made up" });
     // quotes.push("A man needs a good memory after he has lied.");
     quotes.push({ quote: "Beam me up, Scotty!" });
-    quotes.push({ quote: "Oh Beulah, peel me a grape." });
+    // quotes.push({ quote: "Oh Beulah, peel me a grape." });
     quotes.push({ quote: "C++ should have been called B" });
     quotes.push({ quote: "Energizer Bunny Arrested! Charged with battery." });
     quotes.push({
@@ -466,6 +466,45 @@ function start() {
     quotes.push({
       quote:
         "TypeScript is easy! You just do exactly the opposite of what you did in java",
+    });
+    quotes.push({
+      quote:
+        `Why did the JavaScript developer go broke?\n...\n...\nBecause he used typeof on a penny and got a "string" instead of a "number."`,
+    });
+
+    quotes.push({
+      quote:
+        `Why did the JavaScript array go out of bounds?\n...\n...\nBecause it didn't know its own length.`,
+    });
+
+    quotes.push({
+      quote:
+        `Why was the JavaScript developer sad?\n...\n...\nBecause they didn't Node how to Express himself.`,
+    });
+
+    quotes.push({
+      quote:
+        `Why did the child component have such great self-esteem?\n...\n...\nBecause its parent kept giving it props!`,
+    });
+
+    quotes.push({
+      quote:
+        `Don't trust JavaScript programmers. All they do is promises but they never callback.`,
+    });
+
+    quotes.push({
+      quote:
+      `Why did the functional component feel lost?\n...\n...\nBecause it didn't know what state it was in!`,
+    });
+
+    quotes.push({
+      quote:
+      `JavaScript is a lot like English; No one knows how to use semicolons properly.`,
+    });
+
+    quotes.push({
+      quote:
+      `You want to hear a javascript joke?\n...\n...\nI'll callback later.`,
     });
 
     return quotes[Math.floor(Math.random() * quotes.length)];
