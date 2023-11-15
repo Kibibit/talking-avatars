@@ -528,7 +528,7 @@ function start() {
 
     // return quotes[Math.floor(Math.random() * quotes.length)];
 
-    const copy = quotes.slice(0);
+    let copy = quotes.slice(0);
 
     return function() {
       if (copy.length < 1) { copy = quotes.slice(0); }
