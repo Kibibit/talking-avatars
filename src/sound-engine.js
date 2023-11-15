@@ -40,7 +40,7 @@ export function playAudio(text) {
   if (!playSound) { return; }
   var audio = new Audio();
   audio.src = generateWav(text);
-  audio.volume = 0.5;
+  audio.volume = 0.3;
   currentAudio = audio;
   audio.play();
 }
