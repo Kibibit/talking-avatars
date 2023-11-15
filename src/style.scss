@@ -5,6 +5,37 @@ body {
   width: 100vw;
   height: 100vh; }
 
+.start-btn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  #start-btn {
+    background: #9146ff;
+    border: none;
+    padding: 1em;
+    border-radius: 0.2em;
+    font-size: 1rem;
+    font-family: "Press Start 2P", cursive;
+    color: white;
+    cursor: pointer;
+    transition: all 250ms;
+
+    &:hover {
+      background: color-mix(in srgb, #9146ff 50%, black 50%);
+    }
+
+    &.hide {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
 body {
   --page-background: transparent;
   --page-background: lightblue;
