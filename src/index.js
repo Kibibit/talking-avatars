@@ -354,7 +354,7 @@ function start() {
   }
 
   function wizardAnimation(onComplete) {
-    playAudioWav("http://noproblo.dayjo.org/ZeldaSounds/LOZ/LOZ_Fanfare.wav");
+    playAudioWav("https://noproblo.dayjo.org/ZeldaSounds/LOZ/LOZ_Fanfare.wav");
     onComplete && onComplete();
   }
 
