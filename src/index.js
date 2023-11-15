@@ -294,7 +294,7 @@ function blnkAnimation() {
       // console.log("blinking");
       // tl.play("blink");
       // !alreadyPlayed && mouthTimeline.play();
-      // eyesFollowMouse();
+      eyesFollowMouse();
       // textAnimation.play();
     }
   });
