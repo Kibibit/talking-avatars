@@ -17,6 +17,7 @@ function start() {
   const revealData = document.querySelector("#Avataaar").getBBox();
   const pageBg = getParameterByName("background");
 
+  const randomQuote = randomQuotes();
   let currentQuote = randomQuote();
   document.querySelector("#textbox").innerText = currentQuote.quote;
 
@@ -357,7 +358,7 @@ function start() {
     onComplete && onComplete();
   }
 
-  function randomQuote() {
+  function randomQuotes() {
     const quotes = [];
     // quotes.push({ quote: "hello! welcome to my GitHub Profile!" });
     quotes.push({
@@ -525,7 +526,17 @@ function start() {
       `How many programmers does it take to change a light bulb?\n...\n...\nNone, because it is a hardware problem.`,
     });
 
-    return quotes[Math.floor(Math.random() * quotes.length)];
+    // return quotes[Math.floor(Math.random() * quotes.length)];
+
+    const copy = quotes.slice(0);
+
+    return function() {
+      if (copy.length < 1) { copy = quotes.slice(0); }
+      const index = Math.floor(Math.random() * copy.length);
+      const item = copy[index];
+      copy.splice(index, 1);
+      return item;
+    };
   }
 }
 
