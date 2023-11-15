@@ -379,7 +379,7 @@ function start() {
     quotes.push({ quote: "I'm not a complete idiot, some parts are missing!" });
     quotes.push({ quote: "He who laughs last thinks slowest!" });
     quotes.push({
-      quote: "Always remember you're unique, just like everyone else.",
+      quote: "Always remember you're unique. just like everyone else.",
     });
     // quotes.push({ quote: "Save the whales, collect the whole set" });
     // quotes.push("A flashlight is a case for holding dead batteries.");
@@ -397,7 +397,7 @@ function start() {
     quotes.push({
       quote: "I wont rise to the occasion, but I'll slide over to it.",
     });
-    quotes.push({ quote: "What is a free gift ? Aren't all gifts free?" });
+    quotes.push({ quote: "What is a free gift? Aren't all gifts free?" });
     // quotes.push({ quote: "Very funny, Scotty. Now beam down my clothes." });
     quotes.push({ quote: "Consciousness: that annoying time between naps." });
     quotes.push({
@@ -430,7 +430,7 @@ function start() {
     // quotes.push("A man needs a good memory after he has lied.");
     // quotes.push({ quote: "Beam me up, Scotty!" });
     // quotes.push({ quote: "Oh Beulah, peel me a grape." });
-    quotes.push({ quote: "C++ should have been called B" });
+    // quotes.push({ quote: "C++ should have been called B" });
     quotes.push({ quote: "Energizer Bunny Arrested! Charged with battery." });
     quotes.push({
       quote:
@@ -524,6 +524,41 @@ function start() {
     quotes.push({
       quote:
       `How many programmers does it take to change a light bulb?\n...\n...\nNone, because it is a hardware problem.`,
+    });
+
+    quotes.push({
+      quote:
+      `I have a joke about setTimeout(), but it will be executed later.`,
+    });
+
+    quotes.push({
+      quote:
+      `Why did the developer quit writing JavaScript?\n...\n...\nBecause he didn’t know how to provide closure.`,
+    });
+
+    quotes.push({
+      quote:
+      `I don’t always test my code, but when I do, I do it in production.`,
+    });
+
+    quotes.push({
+      quote:
+      `Why do JavaScript web developers wear glasses?\n...\n...\nBecause they can’t C#`,
+    });
+
+    quotes.push({
+      quote:
+      `Some people say that JavaScript is a toy language. Those people obviously don’t know how to TypeScript.`,
+    });
+
+    quotes.push({
+      quote:
+      `Hey girl, are you a JavaScript?\n...\n...\nBecause you turn my undefined into a beautiful object.`,
+    });
+
+    quotes.push({
+      quote:
+      `Why do JavaScript developers prefer dark mode?\n...\n...\nSo they don’t have to see their own errors.`,
     });
 
     // return quotes[Math.floor(Math.random() * quotes.length)];
