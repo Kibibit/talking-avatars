@@ -28,7 +28,7 @@ function toggleAudio() {
   }
 }
 
-function playAudioWav(wavUrl) {
+export function playAudioWav(wavUrl) {
   if (!playSound) { return; }
   const audio = new Audio(wavUrl);
   audio.volume = 1;

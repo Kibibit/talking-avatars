@@ -1,4 +1,4 @@
-import { playAudio } from "./sound-engine";
+import { playAudio, playAudioWav } from "./sound-engine";
 
 const startButton = document.querySelector("#start-btn");
 
@@ -359,7 +359,7 @@ function start() {
 
   function randomQuote() {
     const quotes = [];
-    quotes.push({ quote: "hello! welcome to my GitHub Profile!" });
+    // quotes.push({ quote: "hello! welcome to my GitHub Profile!" });
     quotes.push({
       quote: "IT'S DANGROUS TO GO ALONE!\nTAKE THIS.",
       animation: wizardAnimation,
