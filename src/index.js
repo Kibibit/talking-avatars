@@ -149,7 +149,7 @@ function start() {
     currentQuote = randomQuote();
     mouthTimeline.play();
     // uncomment to replace with 'u' sounds
-    playAudio(currentQuote.quote /*currentQuote.quote.replace(/./g, 'u')*/);
+    playAudio(currentQuote.quoteToSay || currentQuote.quote, false, currentQuote.pitch);
     createTextAnimation("#textbox", currentQuote.quote, () => {
       mouthTimeline.pause();
       setTimeout(
@@ -435,6 +435,7 @@ function start() {
     quotes.push({
       quote:
         "ERROR: Uncaught TypeError: Cannot read property 'length' of undefined..... Haha! Just kidding!",
+      // pitch: 0.5
     });
     quotes.push({
       quote:
@@ -443,6 +444,8 @@ function start() {
     quotes.push({
       quote:
         'Drinking game for web developers:\n(1) Think of a noun\n(2) Google "<noun>.js"\n(3) If a library with that name exists - drink!',
+      quoteToSay:
+        'Drinking game for web developers:\n(one:) Think of a noun\n(two:) Google "<noun> jay es."\n(three:) If a library with that name exists - drink!',
     });
     quotes.push({
       quote:
@@ -483,17 +486,13 @@ function start() {
 
     quotes.push({
       quote:
-        `Why was the JavaScript developer sad?\n...\n...\nBecause they didn't Node how to Express himself.`,
-    });
-
-    quotes.push({
-      quote:
         `Why did the child component have such great self-esteem?\n...\n...\nBecause its parent kept giving it props!`,
     });
 
     quotes.push({
       quote:
         `Don't trust JavaScript programmers. All they do is promises but they never callback.`,
+      // pitch: 0.5
     });
 
     quotes.push({
@@ -514,6 +513,8 @@ function start() {
     quotes.push({
       quote:
       `Have you heard of that new band "1023 Megabytes"?\n...\n...\nThey're pretty good, but they don't have a gig just yet.`,
+      quoteToSay:
+      `Have you heard of that new band "One thousand and twenty-three Megabytes"?\n...\n...\nThey're pretty good, but they don't have a gig just yet.`,
     });
 
     quotes.push({
@@ -539,11 +540,14 @@ function start() {
     quotes.push({
       quote:
       `I don’t always test my code, but when I do, I do it in production.`,
+      pitch: 0.5
     });
 
     quotes.push({
       quote:
       `Why do JavaScript web developers wear glasses?\n...\n...\nBecause they can’t C#`,
+      quoteToSay:
+      `Why do JavaScript web developers wear glasses?\n...\n...\nBecause they can’t see sharp`,
     });
 
     quotes.push({
@@ -553,7 +557,8 @@ function start() {
 
     quotes.push({
       quote:
-      `Hey girl, are you a JavaScript?\n...\n...\nBecause you turn my undefined into a beautiful object.`,
+      `Heeeeeyyy giiiirlll, are you a JavaScript?\n...\n...\nBecause you turn my undefined into a beautiful object.`,
+      pitch: 0.3
     });
 
     quotes.push({

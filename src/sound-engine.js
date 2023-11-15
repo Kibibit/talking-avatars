@@ -36,17 +36,17 @@ export function playAudioWav(wavUrl) {
   audio.play();
 }
 
-export function playAudio(text) {
+export function playAudio(text, shorten = false, pitch = 0.7) {
   if (!playSound) { return; }
   var audio = new Audio();
-  audio.src = generateWav(text);
+  audio.src = generateWav(text, shorten, pitch);
   audio.volume = 0.3;
   currentAudio = audio;
   audio.play();
 }
 
-function generateWav(text) {
+function generateWav(text, shorten = false, pitch = 0.7) {
   return synth.Animalese(`${ text }`,
-    false,
-    0.7).dataURI;
+  shorten,
+  pitch).dataURI;
 }
