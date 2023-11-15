@@ -14,7 +14,6 @@
     "contributors:all": "cross-env HUSKY=0 node ./tools/get-all-contributors.js",
     "contributors:add": "cross-env HUSKY=0 all-contributors add",
     "contributors:generate": "cross-env HUSKY=1 all-contributors generate",
-    "prepare": "husky install",
     "semantic-release:setup": "semantic-release-cli setup",
     "semantic-release": "cross-env HUSKY=0 semantic-release",
     "test": "jest",
@@ -25,20 +24,20 @@
   "author": "thatkookooguy <neilkalman@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "clean-css-cli": "^5.4.2",
+    "clean-css-cli": "^5.6.2",
     "concurrently": "^6.4.0",
     "copyfiles": "^2.4.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.2.0",
-    "http-server": "^14.0.0",
+    "eslint": "^8.53.0",
+    "http-server": "^14.1.1",
     "husky": "^7.0.4",
-    "jest": "^27.3.1",
-    "node-sass": "^6.0.1",
+    "jest": "^29.7.0",
+    "node-sass": "^9.0.0",
     "npm-watch": "^0.11.0",
-    "rimraf": "^3.0.2",
+    "rimraf": "^5.0.5",
     "uglifyjs": "^2.4.11",
-    "webpack": "^5.64.1",
+    "webpack": "^5.89.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.5.0"
+    "webpack-dev-server": "^4.15.1"
   }
 }
