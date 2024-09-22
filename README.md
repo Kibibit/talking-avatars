@@ -309,10 +309,3 @@ kb-talking-avatars
 kb-talking-avatars
 kb-talking-avatars
 kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
-kb-talking-avatars
